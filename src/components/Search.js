@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/Search.css";
-import { ToggleColumns } from "./ToggleColumns";
 import { ProductList } from "./ProductList";
 import { FilterForm } from "./FilterForm";
 
@@ -25,9 +24,6 @@ export const Search = (props) => {
   return (
     <div className="Products">
       <FilterForm priceFrom={priceFrom} priceTo={priceTo} />
-
-      <ToggleColumns onCheckboxClick={""} columns={""} />
-
       <ProductList columns={""} products={filterProducts} />
     </div>
   );
